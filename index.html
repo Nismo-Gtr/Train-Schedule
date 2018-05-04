@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" src="./assets/css/style.css">
+</head>
+<div class="container">
+
+  <body>
+    <div class="row jumbotron text-center">
+      <h1 class="col-md-12">Anytime is Train Time</h1>
+      <p class="col-md-12">Choo Choo. Chee Chee</p>
+    </div>
+    <div class="row" id="scheduleDiv">
+      <table class="table">
+        <h4>Current Train Schedule</h4>
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody id="tBody">
+        </tbody>
+      </table>
+    </div>
+    <div class="row"></div>
+    <form>
+      <h4>Add Train</h4>
+      <div class="form-group">
+        <label>Train Name</label>
+        <input type="text" class="form-control" id="trainName">
+      </div>
+      <div class="form-group">
+        <label for="Input">Destination</label>
+        <input type="text" class="form-control" id="destination">
+      </div>
+      <div class="form-group">
+        <label for="Input">First Train Time(In Military Time)</label>
+        <input type="text" class="form-control" id="firstTrain">
+      </div>
+      <div class="form-group">
+        <label for="Input">Frequency (min)</label>
+        <input type="text" class="form-control" id="frequency">
+      </div>
+      <button type="submit" id="addTrain" class="btn btn-primary">Submit</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+    
+  </body>
+</html>
